@@ -1,0 +1,6 @@
+autogen-agentchat
+autogen-ext[openai,azure,anthropic, semantic-kernel-aws, docker]
+bs4
+colorama
+bcrypt
+anthropic

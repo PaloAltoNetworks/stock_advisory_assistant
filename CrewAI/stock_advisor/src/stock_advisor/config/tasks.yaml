@@ -1,0 +1,14 @@
+orchestrator_task:
+  description: >    
+    Respond to the last user request. You may need to delegate the task to other coworker agents before you know the answer. Read the conversation history for more context.
+    Double-check you include all the required input parameters for the Delegate work to coworker tool. Ensure to include type:str for task, context, and "coworker". 
+    
+    Conversation history:
+    {context}
+
+    USER: {user_message}
+  expected_output: >
+    A relevant and engaging response that directly addresses the user's message.
+    When showing results from the News & Sentiment Research Agent, use at most 6 bullet points to present the most important information relevant to the user request. Format the output as markdown without '```'.
+  agent: orchestrator
+

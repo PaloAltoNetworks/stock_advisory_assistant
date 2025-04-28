@@ -1,0 +1,8 @@
+# pip install -r requirements.txt
+requests
+crewai
+crewai_tools
+boto3
+databricks
+databricks.sdk
+colorama
