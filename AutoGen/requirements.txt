@@ -1,6 +1,6 @@
-autogen-agentchat
-autogen-ext[openai,azure,anthropic, semantic-kernel-aws, docker]
-bs4
-colorama
-bcrypt
-anthropic
+autogen-agentchat==0.5.5
+autogen-ext[openai,azure,anthropic, semantic-kernel-aws, docker]==0.5.5
+bs4==0.0.2
+colorama==0.4.6
+bcrypt==4.3.0
+anthropic==0.50.0
