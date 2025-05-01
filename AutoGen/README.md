@@ -68,7 +68,7 @@ For example,
 
 ## LLM Configuration
 
-By default, the assistant uses **OpenAI**. You can switch to other supported providers as needed (see **Additional Information**).
+By default, the assistant uses **OpenAI**. You can switch to other supported providers as needed (see **Additional Information** below).
 
 ### Set API Keys
 
@@ -115,7 +115,7 @@ alice, bob, charlie, david, eve, frank, grace, henry, irene, jack
 ```
 
 Each user’s default password is: `f"{username.upper()}_2025".`  
-For example, Alice’s password id `ALICE_2025`
+For example, alice’s password id `ALICE_2025`
 
 Disable login requirement by setting `login_required=False` variable in `main.py`
 

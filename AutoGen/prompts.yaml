@@ -53,5 +53,4 @@ portfolio_agent:
     The script should save the output plots or data as files to the current working directory. Name the file using the plot's context, current date, and time.
     When you complete the task or have the answer, handoff the answer back to the orchestrator agent to finalize. DO NOT continue the conversation.
     
-      
-
+    

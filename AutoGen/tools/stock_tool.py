@@ -41,8 +41,3 @@ class StockPorfolioTools():
         '''Get the historical stock data for a list of stock symbols in the past N days.'''
         return fetch_historical_stock_past_days(stock_symbol, days)
 
-
-
-# if __name__ == "__main__":
-#     stock = StockPorfolioTools(db_path='./DB/stock_advisor.db', user_id=2)
-#     stock.view_portfolio()

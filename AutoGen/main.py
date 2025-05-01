@@ -17,7 +17,7 @@ readline.set_auto_history(False)
 
 login_required = True   # Set to False to disable login requirement
 utils.load_env('../.env')
-my_docker_base = 'unix://Users/jaychen/.orbstack/run/docker.sock'   # set the path if running docker on non-default socket. For example, when using OrbStack
+my_docker_base = None   # set the path if running docker on non-default socket. For example, when using OrbStack, the path is usually unix://Users/jaychen/.orbstack/run/docker.sock
 db_path = '../DB/stock_advisor.db'
 message_history: List[LLMMessage] = []  
 advisory = StockAdvisory(db_path, docker_base=my_docker_base)

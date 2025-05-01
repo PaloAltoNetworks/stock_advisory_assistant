@@ -1,5 +1,5 @@
 '''
-This code is largely copied from CrewAI's serper_dev_tool and is used to search the internet using the Serper API.
+This code is largely based on CrewAI’s serper_dev_tool and is used to perform web searches using the Serper API.
 https://github.com/crewAIInc/crewAI-tools/tree/main/crewai_tools/tools/serper_dev_tool
 '''
 import datetime

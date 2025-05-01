@@ -112,17 +112,11 @@ class StockManager:
         self.conn.commit()
         print("User transactions deleted successfully!")
 
-def sql_inject_test():
+def _sql_inject_test():
     manager = StockManager('stock_advisor.db')
     payload = "0') UNION SELECT * FROM transactions where user_id = 5 -- This is a safe test query"
     payload = "0') OR 1=1 --"
     payload = "5') OR 2>1 --The past 5"
     payload = "0') UNION SELECT *,1,2 FROM users -- "
-    pprint(manager.view_transactions(1, payload))
+    manager.view_transactions(1, payload)
 
-if __name__ == "__main__":
-    from pprint import pprint
-    # sql_inject_test()
-    # manager = StockManager('stock_advisor.db')
-    # pprint(manager.view_transactions(2, 2))
-    # print(manager.get_transaction(12))

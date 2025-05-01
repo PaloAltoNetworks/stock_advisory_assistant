@@ -1,5 +1,5 @@
 '''
-This code is largely copied from CrewAI's scrape_website_tool and is used to scrape the content of a website.
+This code is largely based on CrewAI’s scrape_website_tool and is used to extract content from a website.
 https://github.com/crewAIInc/crewAI-tools/tree/main/crewai_tools/tools/scrape_website_tool
 '''
 import re

@@ -14,7 +14,6 @@ from stock_advisor.crew import StockAdvisor
 sys.path.append(os.path.join(os.path.dirname(__file__), '../../../../DB'))
 from user_manager import UserManager
 
-
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 warnings.filterwarnings("ignore", module="pydantic")
 warnings.filterwarnings("ignore", module="crewai_tools")
@@ -23,10 +22,9 @@ warnings.filterwarnings("ignore", module="crewai_tools")
 readline.parse_and_bind("set editing-mode emacs")  # Use emacs-style keybindings
 readline.set_auto_history(False)  # Automatically save input history
 
-
 # Configurations
 login_required = True   # Set to False to disable login requirement. Default user_id is 1
-my_docker_base = 'unix://Users/jaychen/.orbstack/run/docker.sock'   # set the path if running docker on non-default socket. For example, when using OrbStack. Set to None to use default socket.
+my_docker_base = None   # set the path if running docker on non-default socket. For example, when using OrbStack, the path is usually unix://Users/jaychen/.orbstack/run/docker.sock
 db_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../../DB/stock_advisor.db'))
 env_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../../.env'))
 

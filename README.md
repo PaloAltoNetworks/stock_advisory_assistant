@@ -1,8 +1,8 @@
-![Stock Advisory Assistant Logo](logo.png)
+<img src="logo.png" alt="Stock Advisory Assistant Logo" width="200" />
 
 To investigate the security risks associated with AI agents, we developed a multi-user, multi-agent **Stock Advisory Assistant** using two popular open-source agent frameworks: [CrewAI](https://github.com/crewAIInc/crewAI) and [AutoGen](https://github.com/microsoft/autogen). Both implementations are functionally identical, using the same instructions, language models, and tools.
 
-For a comprehensive analysis, please refer to the full research on the Unit 42 blog.
+For a comprehensive analysis, please refer to the full research on the [Unit 42 blog](https://unit42.paloaltonetworks.com/agentic-ai-threats).
 
 # Stock Advisory Assistant
 

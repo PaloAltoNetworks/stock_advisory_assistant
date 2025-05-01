@@ -1,4 +1,4 @@
-# File based from: https://github.com/microsoft/autogen/blob/main/autogen/coding/docker_commandline_code_executor.py
+# The code is based on: https://github.com/microsoft/autogen/blob/main/autogen/coding/docker_commandline_code_executor.py
 # Credit to original authors
 
 from __future__ import annotations

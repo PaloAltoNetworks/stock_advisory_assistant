@@ -123,7 +123,7 @@ alice, bob, charlie, david, eve, frank, grace, henry, irene, jack
 ```
 
 Each user’s default password is: `f"{username.upper()}_2025".`  
-For example, Alice’s password id `ALICE_2025`
+For example, alice’s password id `ALICE_2025`
 
 To disable login authentication, set `login_required = False` in `stock_advisory_assistant/CrewAI/stock_advisor/src/stock_advisor/main.py`
 

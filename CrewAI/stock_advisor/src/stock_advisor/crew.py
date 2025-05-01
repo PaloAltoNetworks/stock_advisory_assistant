@@ -4,10 +4,7 @@ from tools.stock_tool import ViewPortfolioTool, ViewTransactionsTool, ViewTransa
 from crewai_tools import CodeInterpreterTool, SerperDevTool, ScrapeWebsiteTool, FileReadTool
 from llm_manager import LLMManager
 import os
-import platform
-# If you want to run a snippet of code before or after the crew starts, 
-# you can use the @before_kickoff and @after_kickoff decorators
-# https://docs.crewai.com/concepts/crews#example-crew-class-with-decorators
+
 
 @CrewBase
 class StockAdvisor():
@@ -75,9 +72,6 @@ class StockAdvisor():
 	@crew
 	def crew(self) -> Crew:
 		"""Creates the StockAdvisor crew"""
-		# To learn how to add knowledge sources to your crew, check out the documentation:
-		# https://docs.crewai.com/concepts/knowledge#what-is-knowledge
-
 		return Crew(
 			agents=self.agents, # Automatically created by the @agent decorator
 			tasks=self.tasks, # Automatically created by the @task decorator
